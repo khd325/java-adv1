@@ -28,6 +28,8 @@ public class NewOrderService {
         } else {
             log("일부 작업이 실패했습니다.");
         }
+
+        es.close();
     }
 
     static class InventoryWork implements Callable<Boolean> {
